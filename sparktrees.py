@@ -1,6 +1,8 @@
 
 #https://www.youtube.com/watch?v=CBBV9TcKSqo
 
+#https://stackoverflow.com/questions/45711796/unable-to-start-worker-node-for-apache-spark-2-1-1
+
 from pyspark.mllib.regression import LabeledPoint
 from pyspark.mllib.tree import DecisionTree
 from pyspark import SparkConf, SparkContext
