@@ -43,7 +43,7 @@ def createLabeledPoints(fields):
           educationLevel, topTier, interned]))
 
 #Load up our CSV file, and filter out the header line with the column names
-rawData = sc.textFile("e:/sundog-consult/udemy/datascience/PastHire.csv")
+rawData = sc.textFile("trees_test.csv")
 header = rawData.first()
 rawData = rawData.filter(lambda x: x!= header)
 
