@@ -8,6 +8,7 @@ from pyspark.mllib.tree import DecisionTree
 from pyspark import SparkConf, SparkContext
 from numpy import array
 
+
 #Boilerplate Spark stuff:
 conf = SparkConf().setMaster("local").setAppName("SparkDecisionTree")
 sc = SparkContext(conf=conf)
@@ -81,6 +82,5 @@ for result in results:
 #we can also print out the decision tree itself
 print('Learned classification tree model:')
 print(model.toDebugString())
-
 
 
